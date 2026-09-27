@@ -1,28 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
   <defs>
-    <clipPath id="r"><rect width="800" height="200" rx="16"/></clipPath>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0a0f"/><stop offset="100%" stop-color="#14141f"/>
+    <clipPath id="a-clip"><rect width="800" height="200" rx="16"/></clipPath>
+    <linearGradient id="a-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0a14"/>
+      <stop offset="0.55" stop-color="#171a2e"/>
+      <stop offset="0.8" stop-color="#3a2a3a"/>
+      <stop offset="1" stop-color="#7a4a3a"/>
     </linearGradient>
-    <filter id="b1"><feGaussianBlur stdDeviation="40"/></filter>
+    <linearGradient id="a-mount" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3a2c2c"/>
+      <stop offset="0.45" stop-color="#241e24"/>
+      <stop offset="1" stop-color="#141319"/>
+    </linearGradient>
+    <linearGradient id="a-viejo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2e2426"/>
+      <stop offset="1" stop-color="#1b171d"/>
+    </linearGradient>
+    <linearGradient id="a-cloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9c2b4"/>
+      <stop offset="1" stop-color="#8f7f8c"/>
+    </linearGradient>
+    <radialGradient id="a-glow" cx="0.72" cy="1" r="0.6">
+      <stop offset="0" stop-color="#e0915a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#e0915a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="a-soft" x="-10%" y="-50%" width="120%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="a-haze" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
   </defs>
-  <g clip-path="url(#r)">
-    <rect width="800" height="200" fill="url(#bg)"/>
-    <ellipse cx="150" cy="180" rx="200" ry="120" fill="#003B73" opacity="0.15" filter="url(#b1)"/>
-    <ellipse cx="650" cy="20" rx="200" ry="120" fill="#FFCD00" opacity="0.1" filter="url(#b1)"/>
-    <rect width="800" height="2" fill="#003B73" opacity="0.6"/>
-    <text x="400" y="75" text-anchor="middle" font-family="system-ui,sans-serif" font-size="36" fill="#fff" font-weight="700" letter-spacing="1">awesome-canarias</text>
-    <rect x="280" y="86" width="240" height="2" rx="1" fill="#003B73" opacity="0.5"/>
-    <text x="400" y="116" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="rgba(255,255,255,0.5)" font-weight="300" letter-spacing="3">SOFTWARE OPEN SOURCE PARA LAS ISLAS CANARIAS</text>
-    <!-- 7 stars representing the 7 Canary Islands -->
-    <g fill="#FFCD00" opacity="0.5" transform="translate(400,155)">
-      <g transform="translate(-54,0)"><polygon points="0,-6 1.8,-1.8 6.6,-1.8 2.4,1.2 3.6,6 0,3 -3.6,6 -2.4,1.2 -6.6,-1.8 -1.8,-1.8"/></g>
-      <g transform="translate(-18,0)"><polygon points="0,-6 1.8,-1.8 6.6,-1.8 2.4,1.2 3.6,6 0,3 -3.6,6 -2.4,1.2 -6.6,-1.8 -1.8,-1.8"/></g>
-      <g transform="translate(18,0)"><polygon points="0,-6 1.8,-1.8 6.6,-1.8 2.4,1.2 3.6,6 0,3 -3.6,6 -2.4,1.2 -6.6,-1.8 -1.8,-1.8"/></g>
-      <g transform="translate(54,0)"><polygon points="0,-6 1.8,-1.8 6.6,-1.8 2.4,1.2 3.6,6 0,3 -3.6,6 -2.4,1.2 -6.6,-1.8 -1.8,-1.8"/></g>
-      <g transform="translate(-36,18)"><polygon points="0,-6 1.8,-1.8 6.6,-1.8 2.4,1.2 3.6,6 0,3 -3.6,6 -2.4,1.2 -6.6,-1.8 -1.8,-1.8"/></g>
-      <g transform="translate(0,18)"><polygon points="0,-6 1.8,-1.8 6.6,-1.8 2.4,1.2 3.6,6 0,3 -3.6,6 -2.4,1.2 -6.6,-1.8 -1.8,-1.8"/></g>
-      <g transform="translate(36,18)"><polygon points="0,-6 1.8,-1.8 6.6,-1.8 2.4,1.2 3.6,6 0,3 -3.6,6 -2.4,1.2 -6.6,-1.8 -1.8,-1.8"/></g>
+  <g clip-path="url(#a-clip)">
+    <rect width="800" height="200" fill="url(#a-sky)"/>
+    <rect width="800" height="200" fill="url(#a-glow)"/>
+    <g fill="#fff">
+      <circle cx="470" cy="22" r="1" opacity="0.7"/>
+      <circle cx="520" cy="48" r="0.7" opacity="0.5"/>
+      <circle cx="560" cy="16" r="1.2" opacity="0.8"/>
+      <circle cx="612" cy="30" r="0.7" opacity="0.5"/>
+      <circle cx="700" cy="14" r="1" opacity="0.7"/>
+      <circle cx="742" cy="40" r="0.8" opacity="0.6"/>
+      <circle cx="776" cy="22" r="0.6" opacity="0.5"/>
+      <circle cx="668" cy="12" r="0.6" opacity="0.4"/>
+      <circle cx="590" cy="64" r="0.6" opacity="0.35"/>
+      <circle cx="730" cy="70" r="0.6" opacity="0.35"/>
+      <circle cx="486" cy="80" r="0.6" opacity="0.3"/>
+      <circle cx="430" cy="12" r="0.6" opacity="0.4"/>
+      <circle cx="300" cy="16" r="0.6" opacity="0.35"/>
+      <circle cx="40" cy="160" r="0.6" opacity="0.25"/>
     </g>
+    <!-- Pico Viejo: broad summit crater, west of Teide -->
+    <path d="M396,180 C436,160 470,136 496,116 C502,111 508,108 514,107 L552,107 C562,108 574,114 598,124 L620,180 Z" fill="url(#a-viejo)"/>
+    <path d="M396,180 C436,160 470,136 496,116 C502,111 508,108 514,107" fill="none" stroke="#d9956a" stroke-width="1.2" opacity="0.45"/>
+    <!-- Teide: long flanks up to La Rambleta, then the steeper summit cone (pilón) -->
+    <path d="M462,180 C520,156 574,120 612,90 C622,82 630,76 638,72 C648,62 656,52 662,47 L670,47 C676,52 684,62 694,72 C702,76 712,84 724,94 C756,118 790,140 830,156 L830,180 Z" fill="url(#a-mount)"/>
+    <path d="M462,180 C520,156 574,120 612,90 C622,82 630,76 638,72 C648,62 656,52 662,47 L670,47" fill="none" stroke="#e0a07a" stroke-width="1.3" opacity="0.55"/>
+    <!-- La Rambleta break in slope -->
+    <path d="M626,78 C634,74 642,73 650,74 M682,74 C690,73 698,74 706,78" fill="none" stroke="#0c0b10" stroke-width="1" opacity="0.5"/>
+    <!-- lava flow streaks -->
+    <g stroke="#0c0b10" stroke-width="1.1" fill="none" opacity="0.6" stroke-linecap="round">
+      <path d="M664,52 C662,74 660,104 652,140"/>
+      <path d="M672,54 C682,80 700,110 720,142"/>
+      <path d="M650,66 C634,90 618,116 604,146"/>
+      <path d="M700,80 C726,104 754,126 786,148"/>
+      <path d="M612,94 C594,116 574,140 560,160"/>
+      <path d="M534,124 C520,140 508,156 498,170"/>
+    </g>
+    <!-- summit snow on the pilón -->
+    <path d="M662,47 L670,47 C674,50 678,55 682,60 L677,58 L673,62 L668,57 L663,61 L658,56 L653,59 C656,54 659,50 662,47 Z" fill="#efe4dc" opacity="0.6"/>
+    <!-- mar de nubes -->
+    <g filter="url(#a-haze)" opacity="0.5">
+      <ellipse cx="580" cy="170" rx="300" ry="16" fill="#b79c96"/>
+      <ellipse cx="180" cy="180" rx="280" ry="18" fill="#8f7f8c"/>
+    </g>
+    <g filter="url(#a-soft)">
+      <path d="M-20,184 C20,178 50,176 80,180 C104,170 140,170 170,178 C196,168 236,168 262,176 C290,166 330,166 356,174 C384,162 424,160 452,168 C478,156 516,154 544,162 C572,150 612,150 640,158 C668,148 708,148 736,156 C764,148 796,150 820,154 L820,220 L-20,220 Z" fill="url(#a-cloud)" opacity="0.8"/>
+      <path d="M-20,194 C24,186 64,186 100,190 C136,182 180,182 216,188 C252,180 300,178 336,186 C372,176 420,174 456,182 C492,172 540,170 576,178 C612,168 660,168 696,176 C732,168 776,168 820,172 L820,220 L-20,220 Z" fill="#e9d8cc" opacity="0.65"/>
+    </g>
+    <text x="48" y="92" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" fill="#ffffff" font-weight="700" letter-spacing="0.5">awesome-canarias</text>
+    <rect x="50" y="106" width="56" height="3" rx="1.5" fill="#d98c5f"/>
+    <text x="49" y="130" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#ffffff" fill-opacity="0.75" font-weight="500" letter-spacing="2.2">SOFTWARE OPEN SOURCE PARA LAS ISLAS CANARIAS</text>
   </g>
 </svg>
