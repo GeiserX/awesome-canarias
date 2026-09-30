@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" width="256" height="256" role="img" aria-label="Awesome Canarias">
+  <!-- The favicon: the same Teide as logo.svg, at twice its size so the
+       flanks run off the plate's sides and bottom, on a plate in the
+       banner's darkest sky stop (#0a0a14), with the banner's glow colour
+       (#e0915a at 0.35, from a-glow) behind the summit. Ids carry an aw-
+       prefix. -->
+  <defs>
+    <clipPath id="aw-icon-plate"><rect width="360" height="360" rx="72"/></clipPath>
+    <radialGradient id="aw-icon-glow" cx="0.5" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#e0915a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#e0915a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aw-icon-mount" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3a2c2c"/>
+      <stop offset="1" stop-color="#241e24"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="360" rx="72" fill="#0a0a14"/>
+  <rect width="360" height="360" rx="72" fill="url(#aw-icon-glow)"/>
+  <g clip-path="url(#aw-icon-plate)">
+    <g transform="translate(-1152 6) scale(2)">
+        <path d="M462,180 C520,156 574,120 612,90 C622,82 630,76 638,72 C648,62 656,52 662,47 L670,47 C676,52 684,62 694,72 C702,76 712,84 724,94 C756,118 790,140 830,156 L830,180 Z" fill="url(#aw-icon-mount)"/>
+        <path d="M670,47 C676,52 684,62 694,72 C702,76 712,84 724,94 C756,118 790,140 830,156" fill="none" stroke="#e0a07a" stroke-width="3" opacity="0.45"/>
+        <path d="M462,180 C520,156 574,120 612,90 C622,82 630,76 638,72 C648,62 656,52 662,47 L670,47" fill="none" stroke="#e0a07a" stroke-width="3"/>
+        <path d="M662,47 L670,47 C674,50 678,55 682,60 L677,58 L673,62 L668,57 L663,61 L658,56 L653,59 C656,54 659,50 662,47 Z" fill="#efe4dc"/>
+    </g>
+  </g>
+</svg>
