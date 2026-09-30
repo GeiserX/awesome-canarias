@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="566 40 200 120" width="200" height="120" role="img" aria-label="Awesome Canarias">
+  <!-- The Teide from docs/images/banner.svg: the a-mount path (flanks and the
+       summit cone), its lit left-flank edge and the summit snow, same
+       coordinates. The viewBox crops the long flanks around the summit.
+       Dropped: the sky, the glow, the stars, Pico Viejo, the lava streaks,
+       the Rambleta line and the cloud sea. Changed so the mark reads at 26 px
+       on the header (#101221): the a-mount stop #141319 (the sky's own
+       colour) is dropped, so the fill runs #3a2c2c to #241e24; the shaded
+       right flank gets the lit edge's colour at the 0.45 opacity the banner
+       gives Pico Viejo's edge; the 1.3 edge is 3 units wide and the snow is
+       opaque. Ids carry an aw- prefix. -->
+  <defs>
+    <linearGradient id="aw-logo-mount" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3a2c2c"/>
+      <stop offset="1" stop-color="#241e24"/>
+    </linearGradient>
+  </defs>
+  <path d="M462,180 C520,156 574,120 612,90 C622,82 630,76 638,72 C648,62 656,52 662,47 L670,47 C676,52 684,62 694,72 C702,76 712,84 724,94 C756,118 790,140 830,156 L830,180 Z" fill="url(#aw-logo-mount)"/>
+  <path d="M670,47 C676,52 684,62 694,72 C702,76 712,84 724,94 C756,118 790,140 830,156" fill="none" stroke="#e0a07a" stroke-width="3" opacity="0.45"/>
+  <path d="M462,180 C520,156 574,120 612,90 C622,82 630,76 638,72 C648,62 656,52 662,47 L670,47" fill="none" stroke="#e0a07a" stroke-width="3"/>
+  <path d="M662,47 L670,47 C674,50 678,55 682,60 L677,58 L673,62 L668,57 L663,61 L658,56 L653,59 C656,54 659,50 662,47 Z" fill="#efe4dc"/>
+</svg>
