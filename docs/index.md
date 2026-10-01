@@ -27,13 +27,13 @@ hide:
 
     ---
 
-    De Astrofísica y Observatorios a Transporte y Economía, pasando por ISTAC, IAC, GTC, GobCan. El índice lateral sigue la categoría que estás leyendo.
+    De Astrofísica y Observatorios a Transporte y Economía, pasando por ISTAC, La Palma, GTC, Gobierno de Canarias. El índice lateral sigue la categoría que estás leyendo.
 
 -   :material-magnify: **[Buscar un proyecto](https://geiserx.github.io/awesome-canarias/?q=ISTAC)**
 
     ---
 
-    Pulsa `/` y escribe lo que necesitas: ISTAC, IAC, GTC, GobCan. La búsqueda cubre el nombre y la descripción de todas las entradas.
+    Pulsa `/` y escribe lo que necesitas: ISTAC, La Palma, GTC, Gobierno de Canarias. La búsqueda cubre el nombre y la descripción de todas las entradas.
 
 -   :material-plus-box-outline: **[Proponer un proyecto](https://github.com/GeiserX/awesome-canarias/issues/new?template=anadir-proyecto.md)**
 
